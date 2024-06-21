@@ -1,0 +1,241 @@
+body{
+    background-color: rgba(50,54,57);
+    font-family: Helvetica, sans-serif;
+    font-weight:500;
+}
+#goToMainDashboard{
+    position: relative;
+    display: inline-block;
+    background: white;
+    text-align: right;
+    color:rgba(50,54,57);
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem;
+}
+#goToMainDashboard:hover{
+    background-color: black;
+    color: white;
+}
+#main-container{    
+    position: relative;
+    max-width: 75%;
+    min-width: 75%;
+    left: 13%;
+    background-color: white;
+}
+#header{
+    position: relative;
+    color: rgba(128, 0, 0, 0.863);
+}
+#citySeal{
+    width: 80px;
+    height: 82px;
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    left: 8%;
+}
+#cctSeal{
+    width: 75px;
+    height: 80px;
+    position: absolute;
+    display: inline-block;
+    top: 28%;
+    right: 8%;
+}
+#header-text{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
+    left: 35%;
+}
+#header-text h3{
+    margin: 0;
+}
+#header-text p{
+    margin: 0;
+}
+#documentName{
+    margin-top: 25px;
+}
+#documentName p{
+    color: black;
+    margin-bottom: 25px;
+}
+table{
+    position: relative;
+    width: 90%;
+    border: 1px solid maroon;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+caption{
+    background-color: maroon;
+    color: white;
+    padding: 2px;
+    font-size: 13pt;
+}
+.tdcol1, .tdcol2, .tdcol3, .tdcol4{
+    font-size: 11pt;
+    border-left: 1px solid maroon;
+    color: maroon;
+    padding-left: 3px;
+}
+.tdcol1{
+    width: 15%;
+}
+.tdcol2{
+    width: 45%;
+    color: black;
+}
+.tdcol4{
+    border: none;
+    position: relative;
+    right: 3%;
+    color: black;
+}
+
+.section ,.courseCode{
+    width: 15%;
+    font-size: 10pt;
+    vertical-align: top;
+}
+.courseDescription{
+    width: 30%;
+    font-size: 10pt;
+    vertical-align: top;
+}
+.units{
+    width: 6%;
+    font-size: 10pt;
+    text-align: center;
+    vertical-align: top;
+}
+.schedule{
+    font-size: 10pt;
+    vertical-align: top;
+}
+#sectionHeader, #courseCodeHeader, #courseDescriptionHeader, #unitsHeader, #scheduleHeader{
+    font-size: 10pt;
+    color: rgba(128, 0, 0, 0.863);
+    padding-bottom: 20px;
+}
+#sectionHeader, #courseCodeHeader{
+    text-align: left;
+}
+#labelSubjects, #labelLecUnits, #labelLabUnits, #labelCredits{
+    font-size: 10pt;
+    text-align: left;
+    color: maroon;
+    background-color: rgb(233, 233, 124);
+}
+#totalSubjects, #totalLecUnits, #totalLabUnits, #totalCredits{
+    font-size: 10pt;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(233, 233, 124) ;
+}
+#labelSubjects{
+    width: 13%;
+}
+#totalSubjects{
+    width: 15%;
+}
+#labelLecUnits{
+    width: 17%;
+}
+#totalLecUnits{
+    width: 6%;
+}
+#labelLabUnits{
+    width: 13%;
+}
+#totalLabUnits{
+    width: 5%;
+}
+#labelCredits{
+    width: 19%;
+}
+#scholarshipGrantHeader, #paymentHeader{
+    color: maroon;
+    border: 1px solid maroon;
+    font-size: 11pt;
+}
+#freeEducation{
+    text-align: center;
+    font-size: 10pt;
+    border: 1px solid maroon;
+}
+#assessmentOfFeesHeader, #labelTotalTuitionFee{
+    border: 1px solid maroon;
+    color: maroon;
+    font-size: 11pt;
+}
+.assessmentOfFees{
+    padding-left: 25px;
+    color: maroon;
+    border-right: 1px solid maroon;
+    font-size: 11pt;
+    width: 20%;
+}
+.assessmentOfFeesValue, #totalTuitionFee{
+    text-align: right;
+    padding-right: 25px;
+    border-right: 1px solid maroon;
+    font-size: 11pt;
+}
+#termsOfPaymentHeader{
+    color: maroon;
+    font-size: 11pt;
+}
+.termsOfPayment{
+    padding-left: 25px;
+    color: maroon;
+    font-size: 11pt;
+}
+#rulesOnFeesHeader{
+    font-size: 11pt;
+    color: maroon;
+    text-align: center;
+    border-top: 1px solid maroon;
+}
+#totalTuitionFee{
+    border: 1px solid maroon;
+}
+.rulesOnPayment{
+    color: maroon;
+    font-size: 10pt;
+    vertical-align: top;
+}
+.paymentRuleMainSub{
+    list-style-type: lower-alpha;
+}
+#labelAssessedBy{
+    font-size: 11pt;
+    color: maroon;
+    border: 1px solid maroon;
+    vertical-align: top;
+}
+#cashierName ,#labelCashierName{
+    font-weight: 600;
+    font-size: 11pt;
+    color: maroon;
+    text-align: center;
+    border-top: 1px solid maroon;
+    border-right: 1px solid maroon;
+}
+#labelCashierName{
+    font-weight: 500;
+    border-top: none;
+}
+#labelForSchoolDean, #labelForRegistrar, #schoolDean, #collegeRegistrar{
+    color: maroon;
+}
+#schoolDean, #collegeRegistrar{
+    text-align: center;
+    padding-left: 15%;
+}

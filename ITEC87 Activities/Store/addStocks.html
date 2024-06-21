@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Stock Inventory</title>
+
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="store.html" target="_self" id="goToMainDashboard">Main Dashboard</a>
+        </nav>
+        <form id="formAddStocks">
+            <h1>Add Stocks / <br /> Deduct Stocks</h1>
+            <label for="selectProduct">Choose a Product:</label>
+            <select id="selectProduct">
+                <option value="blackJeansStocks">Black Jeans</option>
+                <option value="rippedJeansStocks">Ripped Jeans</option>
+                <option value="skinnyJeansStocks">Skinny Jeans</option>
+                <option value="taperedJeansStocks">Tapered Jeans</option>
+                <option value="jerseyShirtStocks">Jersey Shirt</option>
+                <option value="longSleeveShirtStocks">Long Sleeve Shirt</option>
+                <option value="turtleNeckShirtStocks">Turtle Neck Shirt</option>
+                <option value="vNeckShirtStocks">V-Neck Shirt</option>
+                <option value="drakarrNoirStocks">Drakkar Noir</option>
+                <option value="hugoBossStocks">Hugo Boss</option>
+                <option value="oldSpiceStocks">Old Spice</option>
+                <option value="poisonPerfumeStocks">Poison Perfume</option>
+                <option value="athleticTankTopsStocks">Athletic Tank Tops</option>
+                <option value="muscleTankTopsStocks">Muscle Tank Tops</option>
+                <option value="sheerTankTopsStocks">Sheer Tank Tops</option>
+                <option value="whiteTankTopsStocks">White Tank Tops</option>
+                <option value="miniBasketballSetStocks">Mini BasketBall Set</option>
+                <option value="nerfGunStocks">Nerf Gun</option>
+                <option value="punchingBagSetStocks">Punching Bag</option>
+                <option value="remoteControlCarStocks">Remote Control Car</option>
+                
+            </select> <br /> <br />
+
+            <label for="stocksToAdd">Enter Stocks to Add:</label>
+            <input type="number" id="stocksToAddOrDeduct" min="1" value="1"/> <br /><br />
+
+            <button onclick="adjustStocks('add')">Add Stocks</button>
+            <button onclick="adjustStocks('deduct')">Deduct Stocks</button>
+        </form>
+
+        <script>
+            function adjustStocks(action) {
+            const productSelect = document.getElementById('selectProduct');
+            const quantityInput = document.getElementById('stocksToAddOrDeduct');
+            const stockId = selectProduct.value;
+            let quantity = parseInt(quantityInput.value);
+
+            if (isNaN(quantity) || quantity <= 0) {
+                alert('Please enter a valid quantity.');
+                return;
+            }
+
+            let currentStock = parseInt(localStorage.getItem(stockId));
+            if (action === 'add') {
+                currentStock += quantity;
+            } else if (action === 'deduct') {
+                if (quantity > currentStock) {
+                    alert('Cannot remove more than current stock.');
+                    return;
+                }
+                currentStock -= quantity;
+            }
+
+            localStorage.setItem(stockId, currentStock);
+            alert(`Stocks Renewed! \nNumber of Stocks: ${currentStock}`);
+        }
+        </script>
+    </body>
+</html>

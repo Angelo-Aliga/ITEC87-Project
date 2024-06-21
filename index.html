@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Angelo Aliga</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Angelo Aliga</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Angelo Aliga profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Angelo Aliga</h1>
+            <p class="section__text__p2">Bachelor of Science <br />in Information Technology</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='./assets/Angelo-Aliga-CV.pdf'">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/facebook.png" alt="My Facebook Profile" class="icon" onclick="location.href='https://www.facebook.com/angelo.aliga.7'">
+                <img src="./assets/instagram.png" alt="My Instagram Profile" class="icon" onclick="location.href='https://www.instagram.com/angelo_aliga06/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Information Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am Angelo Aliga currently taking a Bachelor's Degree in Information Technology at City College of Tagaytay. My interest in knowing how computers work and being on demand made me to pursue this course. I enjoy Computer Hardware Servicing but has also an understanding of web development and programming. I am eager to learn new things to improve myself and to contribute to the success of your company.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Hard Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Computer Programming</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Computer Hardware Servicing</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Video Editing</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Photo Editing</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Web Development</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Soft Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Leadership</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Hardworking</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Communication</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Patient</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Trustworthy</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Determined</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/resume.png" alt="Resume Project" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">Resume</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./ITEC87 Activities/Resume with Bootstrap/resume.html'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/certificateofgrades.png" alt="Certificate Project" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">Certificate</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./ITEC87 Activities/Certificate of Registration/certificateOfRegistration.html'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/restaurantmenu.png" alt="Restaurant Menu" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">Restaurant Menu</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./ITEC87 Activities/Restaurant Menu/restaurant.html'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/store.png" alt="Convenience Store" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">Convenience Store</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./ITEC87 Activities/Store/store.html'">
+                        Live Demo
+                    </button>
+                </div>
+            </div></div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:jelloaliga06@gmail.com">jelloaliga06@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/facebook.png" alt="Facebook icon" class="icon contact-icon">
+                <p><a href="https://www.facebook.com/angelo.aliga.7">Angelo Aliga</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Angelo Aliga. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

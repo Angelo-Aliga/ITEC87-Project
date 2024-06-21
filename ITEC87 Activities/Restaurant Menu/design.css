@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+#pageHead{
+    position: sticky;
+    display: inline-block;
+    top: 0;
+    width: 100vw;
+    background-color: #E0163D;
+    margin: 0;
+    z-index: 1;
+}
+#logoJelloBee{
+    width: 75px;
+    height: 60px;
+    position: relative;
+    display: inline-block;
+}
+#titleContainer{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.pageTitle{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+    display: inline-block;
+}
+#navigation{
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+    right: 5%;
+    top: 30%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.categoryLinks{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0 15px;
+    background-color: green;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+.linkText{
+    margin: 5px 0;
+    color: white;
+}
+.categoryLinks:hover{
+    background-color: #321f32;
+}
+#menuSection{
+    position: relative;
+    display: inline-block;
+    width: 65vw;
+    height: auto;
+    left: 0;
+    top: 18%;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+#menuSection{
+    text-align: center;
+    display:inline-block;
+}
+.mainDishItem, .vegetableItem, .dessertItem, .drinksItem, .addOnsItem{
+    width: 200px;
+    height: 200px;
+}
+.dishCategory, #orderListHeader{
+    color: white;
+    background-color:#E0163D;
+    margin: 0;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+#orderSection{
+    position: fixed;
+    display: inline-block;
+    width: 30vw;
+    height: 80%;
+    right: 1%;
+    top: 35;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 5px 5px;
+    text-align: center;
+}
+#orderListHeader{
+    background-color: green;
+}
+#amountPayable{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 28%;
+}
